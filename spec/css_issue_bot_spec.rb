@@ -22,10 +22,10 @@ RSpec.describe 'styling' do
       expect(selector).to include("font-size: 12px;"), "Missing properly formatted .completed font size declaration"
     end
     
-    it 'corrects the #tasks .completed background declaration' do
-      selector = parsed_css.find_by_selector('#tasks .completed')[0]
-      expect(selector).to include("background: #ccc;"), "Missing properly formatted #tasks.completed background declaration"
-    end
+    # it 'corrects the #tasks .completed background declaration' do
+    #   selector = parsed_css.find_by_selector('#tasks .completed')[0]
+    #   expect(selector).to include("background: #ccc;"), "Missing properly formatted #tasks.completed background declaration"
+    # end
   
   end
   
